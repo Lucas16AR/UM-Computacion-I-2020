@@ -1,0 +1,83 @@
+Git = sistema de control de versiones, que registra cambios en un archivo o conjunto de archivos
+	a lo largo del tiempo. Se pueden recuperar, ver y editar las versiones especificas mas adelate. El control de versiones permite a los desarrolladores trabajar en proyectos simultáneamente. Les permite hacer tantos cambios como necesiten sin infringir o retrasar el trabajo de sus colegas.
+
+GitHub = es una plataforma para dejar proyectos, que utiliza el sistema de control de versiones Git. 
+Se trata de un sistema de control de versiones distribuido. Esto significa que cualquier desarrollador del equipo que tenga acceso puede gestionar el código fuente y su historial de cambios utilizando las herramientas de línea de comandos de Git.
+A diferencia de los sistemas de control de versiones centralizados, Git ofrece ramas de características. Esto significa que cada ingeniero de software en el equipo puede dividir una rama de características que proporcionará un repositorio local aislado para hacer cambios en el código.
+Las ramas de características no afectan a la rama maestra, que es donde se encuentra el código original del proyecto. Una vez que se hayan realizado los cambios y el código actualizado esté listo, la rama de características puede fusionarse de nuevo con la rama maestra, que es la forma en que se harán efectivos los cambios en el proyecto.
+
+Comandos Basicos ==>>	
+			*Git init: Inicializar un repositorio de Git (staging = se guardaran temporalmente los archivos =///= repositorio local = base de datos historico del proyecto)
+			*Git status: Muestra el estado en que se encuentran los archivos
+				_Untracked: archivos sin rastrear
+				_Unstaged: archivos que estan en git, afectados por el comando add
+				_Staged: archivos aun no guardados
+				_Tracked: archivos rastreados, ya estan afectados por el commit
+			*Git add: Añade los archivos que estan en staging
+			*Git commmit: guarda los archivos en el repo local
+			*Git push: Envia los archivos al repositorio remoto
+			*Git pull/Clone: Traen en repositorio remoto al repositorio local
+			*Git rm: Elimina el archivo de tu directorio de trabajo, pero no elimina su historial del sistema de versiones
+			*Git log: Ver commit que se han realizado
+			*Git branch: Muestra una lista de los branches que existen en nuestro repositorio
+			*Git checkout: Sirve para moverse entre branchs
+			*Git merge: Hace un merge entre dos branches, en este caso la dirección del merge sería entre el branch que indiquemos en el comando, y el branch donde estémos ubicados
+			*Git diff: Se usa para hacer una lista de conflictos
+			*Git tag: Marca commits específicos. Los desarrolladores lo usan para marcar puntos de lanzamiento
+			*Git show: se usa para mostrar información sobre cualquier objeto git
+			
+			
+Programación Orientada a Objetos (POO): ¿Qué consiste la POO?: Trasladar la naturaleza de los objetos de la vida real al código de programación.
+¿Cómo esta formado un Objeto?: Los objetos tienen estados y comportamientos, también tienen propiedades.
+
+*Objeto: 
+	Entidad que pertenece a aquello que se intenta modelar en un software
+	*Atributos: Características que lo definen (ej: Nombre, Edad, Peso, Estatura)
+	*Métodos: Acciones que puede realizar (ej: Caminar, Dormir, Beber, Correr)
+
+*Clase: 
+	Molde para obtener objetos de la misma estructura. Para obtener un objeto a partir de una clase, se la debe instanciar
+	Objetos de la misma clase, tienen el mismo métodos y atributos, pero los atributos pueden tener distintos valores
+
+*Atributos: 
+	Propiedades del objeto, representadas mediante variables. Define al objeto y a su estado
+	Pueden ser de cualquier tipo de dato (incluso de otros objetos)
+	De clase (estáticos: son compartidos por los objetos de una misma clase), o de instancia, según si el valor es el mismo para todos los objetos o no
+	Pueden crearse de forma dinámica durante la ejecución
+	Los diccionarios para los atributos de clase o de instancia son diferentes
+	Deben tener nombres representativos
+   
+*Métodos: 
+	Dan funcionalidad a los objetos
+	Necesitan una clase para existir
+	Similares a las funciones (con algoritmos, parámetros y valor de retorno)
+	Puede invocarse desde el propio objeto que lo contiene o desde otro, con la sintaxis objeto.metodo()     
+
+*Constructor: 
+	Es un método especial: instancia objetos de una clase (se invoca automáticamente)
+	Se pueden iniciar los atributos de un objeto
+	No es obligatorio crearlo ni inicializar todos los atributos
+
+*Herencia: 
+	Relación de Generalización (clase “padre” es un caso general de la clase “hija”)
+	Clase “padre”: “superclase”. Clase “hija”: “superclase”
+	La subclase hereda los metodos de la superclase, a menos que la subclase los reimplemente o reescribirlo. O sea, si una subclase tiene un metodo propio, llama a ese metodo, no al de la superclase
+
+*Encasuplamiento: 
+	Ayuda a definir correctamente los objetos (bajo acoplamiento: medida en la que un objeto depende de otro objeto)
+	Que el objeto debe incluir todos los atributos y metodos necesarios
+	No incluir metodos que sean responsabilidad de otras clases (permitir lograr un bajo acoplamiento)
+
+*Ocultamiento: 			
+	Se “ocultan” atributos y metodos que solo se van a usar dentro de la propia clase y no dentro de los objetos
+	Permite esconder detalles de implementacion de los datos
+	Evita accesos a los datos de forma accidental o indebida
+
+*Abstraccion:
+	Oculta la complejidad de los algoritmos o de ciertas funcionalidades u operaciones
+	Provee una interfaz simplificada que solo revela lo necesario para su uso
+
+*Polimorfismo:
+	Un mismo objeto puede tomar “varias formas”: heredando de una superclase, implementando una interfaz
+	Un mismo metodo puede tomar “varias formas”: puede reimplementarse en una subclase, o puede reescribirse con distintos parametros y valor de entorno
+	Sobreescritura y sobrecarga de metodos y operadores
