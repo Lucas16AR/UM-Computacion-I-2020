@@ -1,0 +1,1 @@
+MAIN_OPTION_TEXT = "------------------------------\n ---Seleccione una opción--- \n 1-agregar cliente \n 2- agregar libro \n 3- alquilar libro \n 0- Salir\n------------------------------ \n"

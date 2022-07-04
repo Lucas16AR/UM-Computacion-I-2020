@@ -1,0 +1,1 @@
+MAIN_OPTION_TEXT = " -------------------- \n Selecione una opcion \n \n 1) Universidad \n 2) Carrera \n 3) Carrera \n 4) Materia \n 5) Inscripcion \n 6) Salir \n \n  -------------------- \n"
